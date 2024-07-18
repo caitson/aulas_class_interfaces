@@ -1,14 +1,25 @@
 "use strict";
 class Pessoa {
-    constructor(n, a, i, m, tb, bi) {
-        this.nome = n;
-        this.apelido = a;
-        this.idade = i;
-        this.morada = m;
-        this.typeBi = tb;
-        this.bi = bi;
+    constructor() {
+        this.nome = '';
+        this.apelido = '';
+        this.idade = 0;
+        this.sexo = '';
+        this.dataDeNacimento = '';
+    }
+    saudacao() {
+        console.log(`Seja Bemvindo ${this.nome}`);
+    }
+    fazerAniversario() {
+        throw new Error("Method not implemented.");
     }
 }
-let alunoFulano = new Pessoa('AlunoX', 'ApelidoX', 20, 'MoradaX', 'CC', 104343);
-console.table(alunoFulano);
-console.log(alunoFulano.typeBi);
+let pesoaFulano;
+pesoaFulano = new Pessoa();
+pesoaFulano.nome = 'Amilcar';
+pesoaFulano.apelido = 'Tchuda';
+pesoaFulano.idade = 20;
+pesoaFulano.sexo = 'M';
+pesoaFulano.dataDeNacimento = '01-05-2021';
+pesoaFulano.saudacao();
+console.log('Pessoa :: ', pesoaFulano);

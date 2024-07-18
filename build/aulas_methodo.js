@@ -1,0 +1,14 @@
+"use strict";
+function soma(nUm, nDois) {
+    const resultado = nUm + nDois;
+    console.log('Resultado de soma : ', resultado);
+}
+function mantenha(valor) {
+    console.log('Bom dia sr. ', valor, ' cuma q bu mansi ?');
+}
+mantenha('Sunto');
+mantenha('Albino');
+mantenha('Nikson');
+mantenha('Sabino');
+soma(4, 5);
+soma(2, 3);
