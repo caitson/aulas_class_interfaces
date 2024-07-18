@@ -6,7 +6,7 @@ class Pessoa2 {
         this.idade = i;
     }
     fazerAniversario() {
-        this.idade++;
+        return this.idade++;
     }
     saudacao() {
         console.log(`Seja bem-vindo a aulas sr/a ${this.nome} ${this.apleido}`);

@@ -9,8 +9,8 @@ class Pessoa2 implements IPessoa {
         this.idade = i;
     }
 
-    fazerAniversario(): void {
-       this.idade ++;
+    fazerAniversario() {
+       return this.idade ++;
     }
     saudacao(): void {
        console.log(`Seja bem-vindo a aulas sr/a ${this.nome} ${this.apleido}`)
